@@ -70,7 +70,10 @@ class _MyHomePageState extends State<MyHomePage> {
           _processing = false;
         });
       } else {
-        print('Error sending data');
+        print('Error ');
+        setState(() {
+          _processing = false;
+        });
       }
     });
   }
